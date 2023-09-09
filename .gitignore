@@ -1,0 +1,44 @@
+build/
+.idea/
+bin/
+.gradle/
+.settings/
+freeline/
+freeline_core/
+freeline.py
+freeline_project_description.json
+*.iml
+*.project
+*.classpath
+/local.properties
+.DS_Store
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+obj/
+
+# KeyStore
+#*.keystore
+
+*.log
+freeline.zip.tmp
+
+gen/
+src/main/res/drawable/
+
+captures/
+ffmpeg/src/androidTest/java/cn/yupaopao/
+ffmpeg/src/test/java/cn/yupaopao/
+depsTree.txt
+module.local
+class-map.txt
+/deps.txt
+*.gradlee
