@@ -8,10 +8,8 @@ import android.util.Log
  *
  **/
 object LogUtil {
-
     @JvmStatic
     fun w(msg: String?) {
         Log.w("CustomPluginLog", "$msg")
     }
-
 }

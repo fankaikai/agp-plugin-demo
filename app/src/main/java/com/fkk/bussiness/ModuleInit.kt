@@ -6,7 +6,6 @@ package com.fkk.bussiness
  *
  **/
 object ModuleInit {
-
     fun dispatchInit() {
         LogUtil.w("run ModuleInit:DispatchInit()")
     }

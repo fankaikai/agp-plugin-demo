@@ -4,6 +4,7 @@ import com.android.build.api.instrumentation.AsmClassVisitorFactory
 import com.android.build.api.instrumentation.ClassContext
 import com.android.build.api.instrumentation.ClassData
 import com.android.build.api.instrumentation.InstrumentationParameters
+import org.gradle.api.provider.ListProperty
 import org.gradle.api.provider.Property
 import org.gradle.api.tasks.Input
 import org.objectweb.asm.ClassVisitor
@@ -25,15 +26,11 @@ private const val LOG = "com/fkk/bussiness/LogUtil"
 abstract class TrackerTransform : AsmClassVisitorFactory<TrackerInfo> {
 
     override fun createClassVisitor(classContext: ClassContext, nextClassVisitor: ClassVisitor): ClassVisitor {
-        if (HOOK_CLASS == classContext.currentClassData.className) {
-            println("命中HOOK_CLASS=${classContext.currentClassData.className}")
-            return TrackerClassVisitor(nextClassVisitor, parameters.get().userInfo.get())
-        }
-        return nextClassVisitor
+        return TrackerClassVisitor(nextClassVisitor, parameters.get().userInfo.get())
     }
 
     override fun isInstrumentable(classData: ClassData): Boolean {
-        return true
+        return HOOK_CLASS == classData.className
     }
 }
 
