@@ -26,7 +26,7 @@ class TrackerPlugin : Plugin<Project> {
                     params.userInfo.set(getUserInfo(target))
                 }
                 setAsmFramesComputationMode(
-                    FramesComputationMode.COMPUTE_FRAMES_FOR_INSTRUMENTED_CLASSES
+                    FramesComputationMode.COPY_FRAMES
                 )
             }
         }

@@ -1,0 +1,94 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.fkk.plugin",
+    "module": "tracker-plugin",
+    "version": "1.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "tracker-plugin-1.0.1.jar",
+          "url": "tracker-plugin-1.0.1.jar",
+          "size": 13427,
+          "sha512": "ac19eec0b758e50486b9bdb76860f167e97607e702df34421d839c2d089caf7456796b3688023bc0e1c8653fb59705591af1c8db3ffc26417027f5e787c3aa2f",
+          "sha256": "b515636b941351c84818e509eeaf3dd3b221c1e6e44f1f1d6e2540caa773be04",
+          "sha1": "5ac093f9a2da73bd996c272724955d556a794b16",
+          "md5": "6cdc5e2e84d4b8ac93e4d2ec8c5fcd9a"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "8.1.1"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "9.3"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-commons",
+          "version": {
+            "requires": "9.3"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-util",
+          "version": {
+            "requires": "9.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "tracker-plugin-1.0.1.jar",
+          "url": "tracker-plugin-1.0.1.jar",
+          "size": 13427,
+          "sha512": "ac19eec0b758e50486b9bdb76860f167e97607e702df34421d839c2d089caf7456796b3688023bc0e1c8653fb59705591af1c8db3ffc26417027f5e787c3aa2f",
+          "sha256": "b515636b941351c84818e509eeaf3dd3b221c1e6e44f1f1d6e2540caa773be04",
+          "sha1": "5ac093f9a2da73bd996c272724955d556a794b16",
+          "md5": "6cdc5e2e84d4b8ac93e4d2ec8c5fcd9a"
+        }
+      ]
+    }
+  ]
+}

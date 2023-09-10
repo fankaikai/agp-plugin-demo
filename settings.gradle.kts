@@ -12,7 +12,7 @@ pluginManagement {
     resolutionStrategy {
         eachPlugin {
             if (requested.id.id == "com.fkk.tracker"){
-                useModule("com.fkk.plugin:tracker-plugin:1.0.11")
+                useModule("com.fkk.plugin:tracker-plugin:1.0.1")
             }
         }
     }

@@ -31,7 +31,7 @@ afterEvaluate {
                 from(components["java"])
                 groupId = "com.fkk.plugin"
                 artifactId = project.name
-                version = "1.0.11"
+                version = "1.0.1"
 
                 project.group = this.groupId
                 project.version = this.version
